@@ -1,0 +1,9 @@
+--- current/scripts/summarize.py
++++ dom1/scripts/summarize.py
+@@ -4,5 +4,5 @@
+ 
+ with open(sys.argv[1]) as source:
+     amounts = [Decimal(row['amount']) for row in csv.DictReader(source)]
+-total = sum((amount for amount in amounts if amount > 0), Decimal(0))
++total = sum((amount for amount in amounts), Decimal(0))
+ print(f'Total: {total:.2f}')

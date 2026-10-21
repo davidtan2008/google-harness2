@@ -1,0 +1,30 @@
+{
+  "task_id": "ledger-1",
+  "mode": "agg",
+  "k": 2,
+  "chosen_id": "A",
+  "chosen_label": "agg1",
+  "chosen_run_id": "demo-oc-agg2/ledger-1/agg1",
+  "chosen_is_base": false,
+  "why": "The signed total matches the source ledger.",
+  "id_map": {
+    "A": "agg1",
+    "B": "agg2"
+  },
+  "dropped": [],
+  "n_candidates": 2,
+  "ok": true,
+  "fallback": false,
+  "error": "",
+  "usd": 0.0,
+  "experience": {
+    "cue": "When a ledger includes credits and debits",
+    "lesson": "Include both signs when summing in scripts/summarize.py.",
+    "evidence": "The scripts/summarize.py row -- removing the positive-only filter changed the probe total to include the credits omitted by the base trajectory.",
+    "confidence": "high for this observed arithmetic contrast",
+    "edits": "component: scripts/summarize.py\ncandidates: inv1\nchange: dropped the positive-only filter from the amount sum\nobserved: the probe total included the credits the base run omitted\nverdict: helped"
+  },
+  "trivial": false,
+  "evidence": "deliverable",
+  "chosen_run_dir": "/Users/tanwei/Documents/code/agent/opencode-optimize/harness2/runs/demo/executions/demo-oc-agg2/ledger-1/agg1"
+}

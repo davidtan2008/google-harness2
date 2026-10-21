@@ -1,0 +1,322 @@
+{
+  "task_id": "ledger-2",
+  "domain": "accounting",
+  "k": 2,
+  "seed": null,
+  "status": "ok",
+  "base": [
+    {
+      "label": "base1",
+      "run_id": "demo-oc-agg2/ledger-2/base1",
+      "run_dir": "/Users/tanwei/Documents/code/agent/opencode-optimize/harness2/runs/demo/executions/demo-oc-agg2/ledger-2/base1"
+    },
+    {
+      "label": "base2",
+      "run_id": "demo-oc-agg2/ledger-2/base2",
+      "run_dir": "/Users/tanwei/Documents/code/agent/opencode-optimize/harness2/runs/demo/executions/demo-oc-agg2/ledger-2/base2"
+    }
+  ],
+  "modes": {
+    "agg": {
+      "mode": "agg",
+      "task_id": "ledger-2",
+      "k": 2,
+      "finals": [
+        "agg1",
+        "agg2"
+      ],
+      "ok": true,
+      "fell_back": [],
+      "kept_base": [],
+      "stages": [
+        {
+          "label": "inv1",
+          "dim": "INV",
+          "fell_back": false,
+          "kept_base": false,
+          "attempts": 1,
+          "usd": 0.0,
+          "cached": false,
+          "notes": "Keep signed amounts: the base total omitted credits in the source ledger.",
+          "error": ""
+        },
+        {
+          "label": "dom1",
+          "dim": "DOM",
+          "fell_back": false,
+          "kept_base": false,
+          "attempts": 1,
+          "usd": 0.0,
+          "cached": false,
+          "notes": "Keep signed amounts: the base total omitted credits in the source ledger.",
+          "error": ""
+        },
+        {
+          "label": "inv2",
+          "dim": "INV",
+          "fell_back": false,
+          "kept_base": false,
+          "attempts": 1,
+          "usd": 0.0,
+          "cached": false,
+          "notes": "Keep signed amounts: the base total omitted credits in the source ledger.",
+          "error": ""
+        },
+        {
+          "label": "dom2",
+          "dim": "DOM",
+          "fell_back": false,
+          "kept_base": false,
+          "attempts": 1,
+          "usd": 0.0,
+          "cached": false,
+          "notes": "Keep signed amounts: the base total omitted credits in the source ledger.",
+          "error": ""
+        },
+        {
+          "label": "agg1",
+          "dim": "AGG",
+          "fell_back": false,
+          "kept_base": false,
+          "attempts": 1,
+          "usd": 0.0,
+          "cached": false,
+          "notes": "Keep signed amounts: the base total omitted credits in the source ledger.",
+          "error": ""
+        },
+        {
+          "label": "agg2",
+          "dim": "AGG",
+          "fell_back": false,
+          "kept_base": false,
+          "attempts": 1,
+          "usd": 0.0,
+          "cached": false,
+          "notes": "Keep signed amounts: the base total omitted credits in the source ledger.",
+          "error": ""
+        }
+      ],
+      "similarity": {
+        "n": 2,
+        "n_distinct": 1,
+        "mean_line_jaccard": 1.0
+      },
+      "ledger": {
+        "mode": "agg",
+        "task_id": "ledger-2",
+        "k": 2,
+        "R": 8,
+        "expected_R": 8,
+        "P": 6,
+        "session_attempts": 6,
+        "expected_P": 6,
+        "usd": 0.0,
+        "rollout_usd": 0.0,
+        "session_usd": 0.0,
+        "rollouts": [
+          "base1",
+          "base2",
+          "inv1",
+          "dom1",
+          "inv2",
+          "dom2",
+          "agg1",
+          "agg2"
+        ],
+        "sessions": [
+          "inv1",
+          "dom1",
+          "inv2",
+          "dom2",
+          "agg1",
+          "agg2"
+        ]
+      },
+      "errors": []
+    },
+    "seq": {
+      "mode": "seq",
+      "task_id": "ledger-2",
+      "k": 2,
+      "finals": [
+        "c1",
+        "c2"
+      ],
+      "ok": true,
+      "fell_back": [],
+      "kept_base": [
+        "inv2",
+        "dom2",
+        "c2"
+      ],
+      "stages": [
+        {
+          "label": "inv1",
+          "dim": "INV",
+          "fell_back": false,
+          "kept_base": false,
+          "attempts": 1,
+          "usd": 0.0,
+          "cached": false,
+          "notes": "Keep signed amounts: the base total omitted credits in the source ledger.",
+          "error": ""
+        },
+        {
+          "label": "dom1",
+          "dim": "DOM",
+          "fell_back": false,
+          "kept_base": false,
+          "attempts": 1,
+          "usd": 0.0,
+          "cached": false,
+          "notes": "Keep signed amounts: the base total omitted credits in the source ledger.",
+          "error": ""
+        },
+        {
+          "label": "c1",
+          "dim": "COMPOSE",
+          "fell_back": false,
+          "kept_base": false,
+          "attempts": 1,
+          "usd": 0.0,
+          "cached": false,
+          "notes": "Keep signed amounts: the base total omitted credits in the source ledger.",
+          "error": ""
+        },
+        {
+          "label": "inv2",
+          "dim": "INV",
+          "fell_back": false,
+          "kept_base": true,
+          "attempts": 1,
+          "usd": 0.0,
+          "cached": false,
+          "notes": "Keep signed amounts: the base total omitted credits in the source ledger.",
+          "error": ""
+        },
+        {
+          "label": "dom2",
+          "dim": "DOM",
+          "fell_back": false,
+          "kept_base": true,
+          "attempts": 1,
+          "usd": 0.0,
+          "cached": false,
+          "notes": "Keep signed amounts: the base total omitted credits in the source ledger.",
+          "error": ""
+        },
+        {
+          "label": "c2",
+          "dim": "COMPOSE",
+          "fell_back": false,
+          "kept_base": true,
+          "attempts": 1,
+          "usd": 0.0,
+          "cached": false,
+          "notes": "Keep signed amounts: the base total omitted credits in the source ledger.",
+          "error": ""
+        }
+      ],
+      "similarity": null,
+      "ledger": {
+        "mode": "seq",
+        "task_id": "ledger-2",
+        "k": 2,
+        "R": 8,
+        "expected_R": 8,
+        "P": 6,
+        "session_attempts": 6,
+        "expected_P": 6,
+        "usd": 0.0,
+        "rollout_usd": 0.0,
+        "session_usd": 0.0,
+        "rollouts": [
+          "base1",
+          "base2",
+          "inv1",
+          "dom1",
+          "c1",
+          "inv2",
+          "dom2",
+          "c2"
+        ],
+        "sessions": [
+          "inv1",
+          "dom1",
+          "c1",
+          "inv2",
+          "dom2",
+          "c2"
+        ]
+      },
+      "errors": []
+    }
+  },
+  "selections": {
+    "agg": {
+      "task_id": "ledger-2",
+      "mode": "agg",
+      "k": 2,
+      "chosen_id": "A",
+      "chosen_label": "agg2",
+      "chosen_run_id": "demo-oc-agg2/ledger-2/agg2",
+      "chosen_is_base": false,
+      "why": "The signed total matches the source ledger.",
+      "id_map": {
+        "A": "agg2",
+        "B": "agg1"
+      },
+      "dropped": [],
+      "n_candidates": 2,
+      "ok": true,
+      "fallback": false,
+      "error": "",
+      "usd": 0.0,
+      "experience": {
+        "cue": "When a ledger includes credits and debits",
+        "lesson": "Include both signs when summing in scripts/summarize.py.",
+        "evidence": "The scripts/summarize.py row -- removing the positive-only filter changed the probe total to include the credits omitted by the base trajectory.",
+        "confidence": "high for this observed arithmetic contrast",
+        "edits": "component: scripts/summarize.py\ncandidates: inv1\nchange: dropped the positive-only filter from the amount sum\nobserved: the probe total included the credits the base run omitted\nverdict: helped"
+      },
+      "trivial": false,
+      "evidence": "deliverable",
+      "chosen_run_dir": "/Users/tanwei/Documents/code/agent/opencode-optimize/harness2/runs/demo/executions/demo-oc-agg2/ledger-2/agg2",
+      "chosen_tree_is_base": false,
+      "harness_fingerprint": "851f1352f3589138"
+    },
+    "seq": {
+      "task_id": "ledger-2",
+      "mode": "seq",
+      "k": 2,
+      "chosen_id": "A",
+      "chosen_label": "c2",
+      "chosen_run_id": "demo-oc-seq2/ledger-2/c2",
+      "chosen_is_base": false,
+      "why": "The signed total matches the source ledger.",
+      "id_map": {
+        "A": "c2",
+        "B": "c1"
+      },
+      "dropped": [],
+      "n_candidates": 2,
+      "ok": true,
+      "fallback": false,
+      "error": "",
+      "usd": 0.0,
+      "experience": {
+        "cue": "When a ledger includes credits and debits",
+        "lesson": "Include both signs when summing in scripts/summarize.py.",
+        "evidence": "The scripts/summarize.py row -- removing the positive-only filter changed the probe total to include the credits omitted by the base trajectory.",
+        "confidence": "high for this observed arithmetic contrast",
+        "edits": "component: scripts/summarize.py\ncandidates: inv1\nchange: dropped the positive-only filter from the amount sum\nobserved: the probe total included the credits the base run omitted\nverdict: helped"
+      },
+      "trivial": false,
+      "evidence": "deliverable",
+      "chosen_run_dir": "/Users/tanwei/Documents/code/agent/opencode-optimize/harness2/runs/demo/executions/demo-oc-seq2/ledger-2/c2",
+      "chosen_tree_is_base": false,
+      "harness_fingerprint": "851f1352f3589138"
+    }
+  },
+  "errors": []
+}

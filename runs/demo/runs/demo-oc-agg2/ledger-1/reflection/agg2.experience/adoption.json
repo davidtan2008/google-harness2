@@ -1,0 +1,8 @@
+{
+  "chosen_label": "agg1",
+  "candidate_ids": {
+    "A": "agg1",
+    "B": "agg2"
+  },
+  "reason": "The signed total matches the source ledger."
+}

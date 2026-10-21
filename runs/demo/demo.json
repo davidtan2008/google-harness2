@@ -1,0 +1,27 @@
+{
+  "domain": "accounting",
+  "n_tasks": 2,
+  "seed": null,
+  "done": 2,
+  "failed": 0,
+  "tasks": [
+    {
+      "task": "ledger-1",
+      "status": "ok",
+      "library_entries_before": {
+        "agg": 0,
+        "seq": 0
+      }
+    },
+    {
+      "task": "ledger-2",
+      "status": "ok",
+      "library_entries_before": {
+        "agg": 1,
+        "seq": 1
+      }
+    }
+  ],
+  "execution_count": 28,
+  "editor_calls": 32
+}
