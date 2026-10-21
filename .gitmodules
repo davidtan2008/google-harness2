@@ -1,0 +1,3 @@
+[submodule "harness2"]
+	path = harness2
+	url = git@github.com:davidtan2008/google-harness2.git
