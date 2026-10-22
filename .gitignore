@@ -1,1 +1,18 @@
-examples/
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+
+# demo runtime artifacts
+examples/txtstat/.harness2/runs/
+examples/txtstat/.harness2/evals/
+examples/txtstat/.harness2/library/
+examples/txtstat/.harness2/adopted/
+examples/txtstat/.harness2/_audit/
+examples/txtstat/.harness2/worktrees/
+examples/txtstat/.git/

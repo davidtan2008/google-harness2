@@ -1,0 +1,6 @@
+.harness2/runs/
+.harness2/library/
+.harness2/adopted/
+__pycache__/
+*.pyc
+.harness2/evals/

@@ -1,0 +1,11 @@
+{
+  "model": "opencode/deepseek-v4.1-flash-free",
+  "improver_model": "opencode/deepseek-v4.1-flash-free",
+  "timeout": 1200,
+  "verify_timeout": 300,
+  "steps": 80,
+  "domain": "txtstat",
+  "verify": "python3 -m unittest discover -s tests -q",
+  "k": 1,
+  "mode": "parallel"
+}
